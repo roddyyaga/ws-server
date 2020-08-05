@@ -8,7 +8,7 @@ module Client = struct
 
     let ( = ) = ( = )
 
-    let compare = Int.compare
+    let compare = compare
   end
 
   type t = { id: Id.t; client: Websocket_lwt_unix.Connected_client.t }
