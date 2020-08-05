@@ -134,8 +134,9 @@ module Server = struct
       clients []
 
   let get { clients; _ } id =
-    Hashtbl.find_opt clients id
-    |> Option.map (fun (client, _status) -> { Client.id; client })
+    match Hashtbl.find_opt clients id with
+    | Some (client, _status) -> Some { Client.id; client }
+    | None -> None
 
   let broadcast server message =
     Lwt_list.iter_p (fun client -> Client.send client message) (clients server)
