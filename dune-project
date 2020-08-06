@@ -19,7 +19,7 @@
 
 (package
  (name ws-server)
- (synopsis "WebSocket server")
+ (synopsis "Simple WebSocket server library")
  (depends
   (ocaml
    (>= "4.06"))
