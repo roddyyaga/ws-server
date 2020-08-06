@@ -5,7 +5,7 @@
 (version 0.1)
 
 (source
- (github roddyyaga/finch))
+ (github roddyyaga/ws-server))
 
 (documentation "https://github.com/roddyyaga/ws-server")
 
