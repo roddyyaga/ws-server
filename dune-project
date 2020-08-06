@@ -23,6 +23,5 @@
  (depends
   (ocaml
    (>= "4.06"))
-  dune
   lwt_ppx
   websocket-lwt-unix))
